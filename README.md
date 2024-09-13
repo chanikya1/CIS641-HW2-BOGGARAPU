@@ -1,6 +1,6 @@
-# CHANIKYA BOGGARAPU
+# CHAiiKYA BOGGARAPU 
 
-## INTRESTS
+## INTRESTS 
 
 •	I like learning new things on the Internet.
 
