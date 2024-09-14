@@ -4,16 +4,42 @@
     <title>My Personal Portfolio of my Cricketer</title>
     <style>
         body {
-            background-image: url('background.jpg'); 
+            background-image: url('background.jpg'); /* Replace with your background image */
             background-size: cover;
             background-repeat: no-repeat;
             font-family: Arial, sans-serif;
-            color: #fff; 
+            color: #fff; /* White text color for contrast */
+        }
+        h2, p {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            padding: 10px; /* Add padding for better readability */
+            border-radius: 5px; /* Rounded corners for a smoother look */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Text shadow for better contrast */
         }
         .score-image {
+            display: none; /* Hide images by default */
+            width: 100%; /* Adjust as needed */
+            max-width: 600px; /* Adjust as needed */
             margin-top: 10px;
         }
+        .score-link {
+            display: block;
+            margin: 10px 0;
+            cursor: pointer;
+            color: #f8f9fa; /* Light color for the links */
+            text-decoration: none; /* Remove underline from links */
+            border-bottom: 1px solid #f8f9fa; /* Underline links */
+        }
+        .score-link:hover {
+            color: #dfe6e9; /* Change link color on hover */
+        }
     </style>
+    <script>
+        function showImage(scoreType) {
+            document.querySelectorAll('.score-image').forEach(img => img.style.display = 'none');
+            document.getElementById(scoreType).style.display = 'block';
+        }
+    </script>
 </head>
 <body>
     <h2>What is Cricket?</h2>
@@ -24,11 +50,13 @@
 
     <h2>Virat Kohli's International Records</h2>
     <ul>
-        <li><b>Test Cricket Highest Score: 254* vs South Africa in 2019</b> <a href="test-image.jpg" target="_blank"><img src="test-thumb.jpg" alt="Test Score Image" class="score-image"></a></li>
-        <li><b>ODI Cricket Highest Score: 183 vs Pakistan in 2012</b> <a href="odi-image.jpg" target="_blank"><img src="odi-thumb.jpg" alt="ODI Score Image" class="score-image"></a></li>
-        <li><b>T20 International Highest Score: 122* vs Afghanistan in 2022</b> <a href="t20-image.jpg" target="_blank"><img src="t20-thumb.jpg" alt="T20 Score Image" class="score-image"></a></li>
+        <li><a href="#" class="score-link" onclick="showImage('test-score')">Test Cricket Highest Score: 254* vs South Africa in 2019</a></li>
+        <li><a href="#" class="score-link" onclick="showImage('odi-score')">ODI Cricket Highest Score: 183 vs Pakistan in 2012</a></li>
+        <li><a href="#" class="score-link" onclick="showImage('t20-score')">T20 International Highest Score: 122* vs Afghanistan in 2022</a></li>
     </ul>
 
-    <p>Kohli's achievements go beyond these records. He has been awarded numerous accolades, including the ICC Cricketer of the Year multiple times, and remains one of the most influential figures in modern cricket.</p>
+    <img id="test-score" class="score-image" src="images/test-score.jpg" alt="Test Cricket Highest Score">
+    <img id="odi-score" class="score-image" src="images/odi-score.jpg" alt="ODI Cricket Highest Score">
+    <img id="t20-score" class="score-image" src="images/t20-score.jpg" alt="T20 International Highest Score">
 </body>
 </html>
