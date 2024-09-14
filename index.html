@@ -4,49 +4,14 @@
     <title>My Personal Portfolio of my Cricketer</title>
     <style>
         body {
-            background-image: url('background.jpg'); /* Make sure this path is correct */
+            background-image: url('background-image.jpg');
             background-size: cover;
-            background-repeat: no-repeat;
-            font-family: Arial, sans-serif;
-            color: #fff; /* White text color */
-            margin: 0;
-            padding: 0;
-        }
-        h2, p {
-            background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
-            padding: 10px;
-            border-radius: 5px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-            color: #f0f0f0; /* Light text color for better contrast */
-        }
-        ul {
-            list-style-type: none; /* Remove bullet points */
-            padding: 0;
-        }
-        .score-link {
-            display: block;
-            margin: 10px 0;
-            cursor: pointer;
-            color: #f8f9fa; /* Light color for the links */
-            text-decoration: none;
-            border-bottom: 1px solid #f8f9fa;
-        }
-        .score-link:hover {
-            color: #dfe6e9; /* Hover color */
+            color: white;
         }
         .score-image {
-            display: none; /* Hide images by default */
-            width: 100%;
-            max-width: 600px;
             margin-top: 10px;
         }
     </style>
-    <script>
-        function showImage(scoreType) {
-            document.querySelectorAll('.score-image').forEach(img => img.style.display = 'none');
-            document.getElementById(scoreType).style.display = 'block';
-        }
-    </script>
 </head>
 <body>
     <h2>What is Cricket?</h2>
@@ -57,13 +22,11 @@
 
     <h2>Virat Kohli's International Records</h2>
     <ul>
-        <li><b>Test Cricket Highest Score:</b> <a href="test-image.jpg" target="_blank">View Image</a></li>
-        <li><b>ODI Cricket Highest Score:</b> <a href="odi-image.jpg" target="_blank">View Image</a></li>
-        <li><b>T20 International Highest Score:</b> <a href="t20-image.jpg" target="_blank">View Image</a></li>
+        <li><b>Test Cricket Highest Score:</b> <a href="test-image.jpg" target="_blank"><img src="test-thumb.jpg" alt="Test Score Image" class="score-image"></a></li>
+        <li><b>ODI Cricket Highest Score:</b> <a href="odi-image.jpg" target="_blank"><img src="odi-thumb.jpg" alt="ODI Score Image" class="score-image"></a></li>
+        <li><b>T20 International Highest Score:</b> <a href="t20-image.jpg" target="_blank"><img src="t20-thumb.jpg" alt="T20 Score Image" class="score-image"></a></li>
     </ul>
 
-    <img id="test-score" class="score-image" src="images/test-score.jpg" alt="Test Cricket Highest Score">
-    <img id="odi-score" class="score-image" src="images/odi-score.jpg" alt="ODI Cricket Highest Score">
-    <img id="t20-score" class="score-image" src="images/t20-score.jpg" alt="T20 International Highest Score">
+    <p>Kohli's achievements go beyond these records. He has been awarded numerous accolades, including the ICC Cricketer of the Year multiple times, and remains one of the most influential figures in modern cricket.</p>
 </body>
 </html>
