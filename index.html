@@ -4,34 +4,41 @@
     <title>My Personal Portfolio of my Cricketer</title>
     <style>
         body {
-            background-image: url('background.jpg'); /* Replace with your background image */
+            background-image: url('background.jpg'); /* Make sure this path is correct */
             background-size: cover;
             background-repeat: no-repeat;
             font-family: Arial, sans-serif;
-            color: #fff; /* White text color for contrast */
+            color: #fff; /* White text color */
+            margin: 0;
+            padding: 0;
         }
         h2, p {
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-            padding: 10px; /* Add padding for better readability */
-            border-radius: 5px; /* Rounded corners for a smoother look */
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Text shadow for better contrast */
+            background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
+            padding: 10px;
+            border-radius: 5px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+            color: #f0f0f0; /* Light text color for better contrast */
         }
-        .score-image {
-            display: none; /* Hide images by default */
-            width: 100%; /* Adjust as needed */
-            max-width: 600px; /* Adjust as needed */
-            margin-top: 10px;
+        ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0;
         }
         .score-link {
             display: block;
             margin: 10px 0;
             cursor: pointer;
             color: #f8f9fa; /* Light color for the links */
-            text-decoration: none; /* Remove underline from links */
-            border-bottom: 1px solid #f8f9fa; /* Underline links */
+            text-decoration: none;
+            border-bottom: 1px solid #f8f9fa;
         }
         .score-link:hover {
-            color: #dfe6e9; /* Change link color on hover */
+            color: #dfe6e9; /* Hover color */
+        }
+        .score-image {
+            display: none; /* Hide images by default */
+            width: 100%;
+            max-width: 600px;
+            margin-top: 10px;
         }
     </style>
     <script>
