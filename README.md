@@ -1,6 +1,6 @@
 # CHANIKYA BOGGARAPU 
 
-## INTRESTS 
+## INTERESTS 
 This is Chanikya,
 
 •	I like learning new things on the Internet.
